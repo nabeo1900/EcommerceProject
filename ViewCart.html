@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./main.js">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -62,38 +63,38 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
-                                <td class="product-thumbnail"><a href="single-product.html"><img src="./assets/images/product/electric/product-01.png" alt="Digital Product"></a></td>
+                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
+                                <td class="product-thumbnail"><a href="single-product.html"><img src="./assets/image/product-01.png" alt="Digital Product"></a></td>
                                 <td class="product-title"><a href="single-product.html">Wireless PS Handler</a></td>
                                 <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
-                                <td class="product-quantity" data-title="Qty">
-                                    <div class="pro-qty"><span class="dec qtybtn">-</span>
-                                        <input type="number" class="quantity-input" value="1">
-                                    <span class="inc qtybtn">+</span></div>
+                                <td class="product-quantity " data-title="Qty">
+                                    <button onclick="dec('item1')">-</button>
+                                        <input name="item1" type="text" readonly class="quantity-input" value="0">
+                                    <button onclick="inc('item1')">+</button>  
                                 </td>
                                 <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
                             </tr>
                             <tr>
-                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
-                                <td class="product-thumbnail"><a href="single-product-2.html"><img src="./assets/images/product/electric/product-02.png" alt="Digital Product"></a></td>
+                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
+                                <td class="product-thumbnail"><a href="single-product-2.html"><img src="./assets/image/product-04.png" alt="Digital Product"></a></td>
                                 <td class="product-title"><a href="single-product-2.html">Gradient Light Keyboard</a></td>
                                 <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
-                                <td class="product-quantity" data-title="Qty">
-                                    <div class="pro-qty"><span class="dec qtybtn">-</span>
-                                        <input type="number" class="quantity-input" value="1">
-                                    <span class="inc qtybtn">+</span></div>
+                                <td class="product-quantity " data-title="Qty">
+                                    <button onclick="dec('item2')">-</button>
+                                        <input name="item2" type="text" readonly class="quantity-input" value="0">
+                                    <button onclick="inc('item2')">+</button>  
                                 </td>
                                 <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
                             </tr>
                             <tr>
-                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
-                                <td class="product-thumbnail"><a href="single-product-3.html"><img src="./assets/images/product/electric/product-03.png" alt="Digital Product"></a></td>
+                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fa-solid fa-xmark"></i></a></td>
+                                <td class="product-thumbnail"><a href="single-product-3.html"><img src="./assets/image/product-03.png" alt="Digital Product"></a></td>
                                 <td class="product-title"><a href="single-product-3.html">HD CC Camera</a></td>
                                 <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>124.00</td>
-                                <td class="product-quantity" data-title="Qty">
-                                    <div class="pro-qty"><span class="dec qtybtn">-</span>
-                                        <input type="number" class="quantity-input" value="1">
-                                    <span class="inc qtybtn">+</span></div>
+                                <td class="product-quantity " data-title="Qty">
+                                    <button onclick="dec('item3')">-</button>
+                                        <input name="item3" type="text" readonly class="quantity-input" value="0">
+                                    <button onclick="inc('item3')">+</button>  
                                 </td>
                                 <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">$</span>275.00</td>
                             </tr>
@@ -101,12 +102,6 @@
                     </table>
                 </div>
                 <div class="cart-update-btn-area">
-                    <div class="input-group product-cupon">
-                        <input placeholder="Enter coupon code" type="text">
-                        <div class="product-cupon-btn">
-                            <button type="submit" class="axil-btn btn-outline">Apply</button>
-                        </div>
-                    </div>
                     <div class="update-btn">
                         <a href="#" class="axil-btn btn-outline">Update Cart</a>
                     </div>
@@ -157,6 +152,109 @@
             </div>
         </div>
     </div>
-    <!-- End Cart Area  -->
+    <footer>
+        <div class="footer-top separator-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Support</h5>
+                            <div class="inner">
+                                <p>141 Chien Thang <br>
+                                    Thanh Tri <br>
+                                    Ha Noi
+                                </p>
+                                <ul class="support-list-item">
+                                    <li><a href="mailto:example@domain.com"><i class="fa-regular fa-envelope"></i>
+                                            example@gmail.com</a></li>
+                                    <li><a href="tel:(+01)850-315-5862"><i class="fa-solid fa-phone"></i> 098524760X</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Account</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="sign-up.html">Login / Register</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Quick Link</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-of-service.html">Terms Of Use</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Download App</h5>
+                            <div class="inner">
+                                <span>Save $3 With App &amp; New User only</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area copyright-default separator-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="social-share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="copyright-left d-flex flex-wrap justify-content-center">
+                            <ul class="quick-link">
+                                <li>© 2022. All rights reserved by Na</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script>
+function inc(element) {
+  let el = document.querySelector(`[name="${element}"]`);
+  el.value = parseInt(el.value) + 1;
+}
+
+function dec(element) {
+  let el = document.querySelector(`[name="${element}"]`);
+	if (parseInt(el.value) > 0) {
+	  el.value = parseInt(el.value) - 1;
+  }
+}
+
+</script>

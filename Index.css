@@ -329,5 +329,218 @@ footer i{
 
 /* checkout Page Style */
 .axil-product-cart-area{
-    margin-top: 91px;
+    margin: 91px auto 50px;
+}
+.product-table-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 20px;
+}
+.axil-product-table thead {
+    background-color: #f6f7fb;
+}
+.axil-product-table thead tr th{
+    font-size: 19px;
+    font-weight: 500;
+    padding: 20px 8px;
+    border-bottom: none;
+}
+.axil-product-table tbody td.product-thumbnail a img {
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.axil-order-summery {
+    background-color: #f9f3f0;
+    border-radius: 6px;
+    padding: 40px;
+}
+.axil-product-table tbody td {
+    border-top: none;
+    border-bottom: 2px solid #f6f7fb;
+    vertical-align: middle;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #777777;
+}
+.axil-product-cart-wrap a{
+    text-decoration: none!important;
+    color: black;
+}
+tbody *, tbody span, tbody td{
+    font-size: 15px!important;
+
+}
+.axil-product-table tbody td.product-remove .remove-wishlist {
+    display: block;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    line-height: 30px;
+    background-color: #f6f7fb;
+    border: 2px solid #f6f7fb;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #000000;
+}
+.product-quantity input{
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+.product-quantity button {
+    width: 32px;
+    line-height: 26px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    height: 32px;
+    background: #f6f7fb;
+    border-radius: 50%;
+    transition: .3s;
+    border: 2px solid rgba(0,0,0,0);
+}
+.product-quantity input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  .product-quantity input[type=number]::-webkit-inner-spin-button, 
+  .product-quantity input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+.axil-product-cart-wrap a.axil-btn.btn-bg-primary {
+    background-color: #3577f0;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 16px 38px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+.axil-product-cart-wrap a.axil-btn:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.axil-order-summery .summery-table tbody td {
+    border-bottom: 1px solid;
+    border-color: rgba(101,105,115,.2);
+    font-size:15px;
+    font-weight: 21px;
+    color: #292930;
+    padding: 18px 15px 18px 0;
+    min-width: 180px;
+}
+.axil-order-summery input[type=radio]~label {
+    position: relative;
+    font-size: 15px;
+    line-height: 29px;
+    color: #292930;
+    font-weight: 500;
+    padding-left: 28px;
+    cursor: pointer;
+}
+
+/* Process Checkout */
+
+.axil-checkout-area{
+    margin: 120px auto 50px;
+}
+.axil-checkout-area .form-group label {
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    pointer-events: none;
+    z-index: 4;
+    background: #fff;
+    padding: 0 10px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #777777;
+}
+.axil-checkout-area .form-group input {
+    border: 0 none;
+    border-radius: 6px;
+    height: 50px;
+    font-size: 15px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #cbd3d9;
+    width: 100%;
+}
+.axil-checkout-billing .form-group input {
+    height: 60px;
+    border-color: #cbd3d9;
+    padding: 0 30px;
+}
+.axil-checkout-billing .form-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+.axil-checkout-billing .form-group select {
+    border-color: #cbd3d9;
+}
+
+.axil-checkout-billing .form-group select{
+    cursor: pointer;
+    transition: .3s;
+    height: 55px;
+    padding: 0 30px;
+    outline: none;
+    color: #777777;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #e3e6e9;
+    border-radius: 6px;
+    background: url(./assets/image/arrow-icon.png) 95% center no-repeat rgba(0,0,0,0);
+    padding-right: 32px;
+    width: 100%;
+}
+.axil-checkout-billing .title{
+    margin-bottom: 40px;
+}
+.axil-checkout-area .btn-bg-primary {
+    background-color: #3577f0;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 16px 38px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+}
+input:focus-visible{
+    border: none;
+    outline: none;
+}
+.axil-checkout-area  input[type=radio]~label {
+    padding-left: 10px;
 }
